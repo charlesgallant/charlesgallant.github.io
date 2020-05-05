@@ -2,8 +2,115 @@
 <html>
 <head>
   <title></title>
+  <style type="text/css">
+
+* {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 340s;
+  animation-duration: 340s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+body {
+  padding-bottom: 5rem;
+}
+
+h1, h2, p {
+  padding: 0 5%;
+}
+
+
+  </style>
 </head>
 <body>
-hello stream
+
+<div class="ticker-wrap">
+<div class="ticker">
+  <div class="ticker__item">Welcome to the stream.</div>
+  <div class="ticker__item">I'm still trying to figure all of this out.</div>
+  <div class="ticker__item">This is just some improv guitar over backing tracks.</div>
+  <div class="ticker__item">Nothing crazy.</div>
+  <div class="ticker__item">Trying to stay in the moment, and avoid playing anything premeditated.</div>
+    <div class="ticker__item">That's the challenge: Try not to lean back on riffs or anything I've played before.</div>
+    <div class="ticker__item">As it turns out, this is super hard, and might get weird.</div>
+    <div class="ticker__item">But at least it's real.</div>
+    <div class="ticker__item">This way, we're both hearing it for the first time.</div>
+    <div class="ticker__item">...and we're in it together.</div>
+    <div class="ticker__item">Now, this might fail horribly.</div>
+    <div class="ticker__item">I probably repeat lots of notes and phrases and don't even realize it.</div>
+    <div class="ticker__item">But that's okay.</div>
+    <div class="ticker__item">Failure + iteration are important.</div>
+    <div class="ticker__item">If you're finding ways to iterate, fail, and learn you're not trying hard enough, or you're not risking enough.</div>
+    <div class="ticker__item">So let's fail a bit.</div>
+    <div class="ticker__item">It's okay.</div>
+    <div class="ticker__item">This is a safe place.</div>
+    <div class="ticker__item">Things are weird out there.</div>
+    <div class="ticker__item">In here, everything is pure 100% gravy.</div>
+    <div class="ticker__item">Any chance we can to spread some good gravy is a good thing.</div>
+    <div class="ticker__item">I hope you enjoy.</div>
+    <div class="ticker__item">Okay this is the end.</div>
+    <div class="ticker__item">No more sentences to scroll.</div>
+    <div class="ticker__item">Seriously I'm out of ideas.</div>
+    <div class="ticker__item">There's just none left.</div>
+    <div class="ticker__item">Zip.</div>
+    <div class="ticker__item">- end of line -</div>
+    <div class="ticker__item"> .    .    .    .     .    </div>
+    <div class="ticker__item">Are the new viewers gone yet?</div>
+    <div class="ticker__item">No?</div>
+</div>
+</div>
+
 </body>
 </html>
