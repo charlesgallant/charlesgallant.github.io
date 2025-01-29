@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading...</title>
+</head>
+<body>
+    <script>
+        // Get the query parameter 'page' from the URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var page = urlParams.getAll('openmic');
+
+        // Use a switch statement to redirect based on the 'page' parameter
+        switch (page) {
+            case '':
+                window.location.href = 'https://linktr.ee/jimherlihy';
+                break;
+            default:
+                window.location.href = 'https://charlesgallant.com';
+        }
+    </script>
+</body>
+</html>
